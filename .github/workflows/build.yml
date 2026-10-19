@@ -1,0 +1,103 @@
+# Compila a Forja para Windows e macOS. Ao enviar uma etiqueta vX.Y.Z, publica uma versão (Release) com os ficheiros.
+name: Compilar
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: Windows
+          - os: macos-14
+            name: macOS-AppleSilicon
+          - os: macos-15-intel
+            name: macOS-Intel
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt "pyinstaller>=6.16"
+
+      - name: Versão
+        id: ver
+        shell: bash
+        run: |
+          V=$(python -c "import forja; print(forja.__version__)")
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; fi
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+
+      - name: Compilar com PyInstaller
+        run: pyinstaller packaging/forja.spec --noconfirm --distpath dist --workpath build
+
+      - name: Autoteste da versão compilada (macOS)
+        if: runner.os == 'macOS'
+        env:
+          QT_QPA_PLATFORM: offscreen
+          FORJA_SELFTEST: "1"
+        run: dist/Forja.app/Contents/MacOS/Forja
+
+      - name: Autoteste da versão compilada (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          QT_QPA_PLATFORM: offscreen
+          FORJA_SELFTEST: "1"
+        run: |
+          $p = Start-Process -FilePath dist\Forja\Forja.exe -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "Autoteste falhou ($($p.ExitCode))" }
+
+      - name: Empacotar (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          V=${{ steps.ver.outputs.version }}
+          mkdir -p dmg && cp -R dist/Forja.app dmg/ && ln -s /Applications dmg/Applications
+          hdiutil create -volname "Forja" -srcfolder dmg -ov -format UDZO "dist/Forja-$V-${{ matrix.name }}.dmg"
+
+      - name: Empacotar (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $V = "${{ steps.ver.outputs.version }}"
+          Compress-Archive -Path dist\Forja -DestinationPath "dist\Forja-$V-Windows-portatil.zip"
+          choco install innosetup --no-progress -y
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "/DAppVersion=$V" packaging\forja.iss
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Forja-${{ matrix.name }}
+          path: |
+            dist/*.dmg
+            dist/*.zip
+            dist/*.exe
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: out/*
+          generate_release_notes: true

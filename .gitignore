@@ -1,0 +1,16 @@
+# ambiente Python
+.venv/
+__pycache__/
+*.pyc
+
+# registos e ficheiros do sistema
+erros.log
+.DS_Store
+
+# projetos e saídas de teste locais
+*.forja
+
+# compilação
+build/
+dist/
+dmg/

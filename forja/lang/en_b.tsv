@@ -1,0 +1,917 @@
+Fase (avançado)	Phase (advanced)
+Subtrair fases (A − B, embrulhada)	Subtract phases (A − B, wrapped)
+Filtrar fase embrulhada (seno/cosseno)…	Filter wrapped phase (sine/cosine)…
+Filtrar fase desembrulhada…	Filter unwrapped phase…
+Média de várias fases	Average of several phases
+Mapa de variância do gradiente (PGV)	Phase gradient variance map (PGV)
+Desembrulhar guiado por PGV	PGV-guided unwrapping
+Desembrulhar guiado por mapa do utilizador (A = fase, B = qualidade)	Unwrap guided by user map (A = phase, B = quality)
+Correlação digital de imagem (DIC)	Digital image correlation (DIC)
+Deslocamentos por subconjuntos (antes, depois)…	Subset displacements (before, after)…
+Deslocamentos densos (fluxo ótico)	Dense displacements (optical flow)
+Deformações a partir de DispX e DispY…	Strains from DispX and DispY…
+Gerar padrão de speckle e deformação de teste…	Generate speckle pattern and test deformation…
+Interferometria / shearografia	Interferometry / shearography
+Fase → deslocamento fora do plano…	Phase → out-of-plane displacement…
+Fase → deslocamento no plano…	Phase → in-plane displacement…
+Fase → gradiente de deformação (shearografia)…	Phase → deformation gradient (shearography)…
+Holografia digital	Digital holography
+Reconstruir holograma…	Reconstruct hologram…
+Gerar holograma de teste	Generate test hologram
+Triangulação por linha laser	Laser line triangulation
+Perfil da linha numa imagem	Line profile in an image
+Varrimento: sequência de imagens → mapa de altura…	Scan: image sequence → height map…
+Gerar sequência de teste	Generate test sequence
+Estéreo (2 câmaras)	Stereo (2 cameras)
+Calibrar par estéreo (metade esquerda, metade direita)…	Calibrate stereo pair (left half, right half)…
+Profundidade a partir de um par calibrado (esq., dir.)…	Depth from a calibrated pair (left, right)…
+Disparidade sem calibração (esq., dir.)…	Uncalibrated disparity (left, right)…
+Gerar imagens de calibração de teste	Generate test calibration images
+Nuvens de pontos	Point clouds
+Importar nuvem (TXT/XYZ/PLY)…	Import cloud (TXT/XYZ/PLY)…
+Exportar objeto como nuvem TXT (pontos e normais)…	Export object as TXT cloud (points and normals)…
+Triangulação de Delaunay → malha…	Delaunay triangulation → mesh…
+Alinhar objeto A a B (ICP)	Align object A to B (ICP)
+Juntar vistas de mesa rotativa (imagens de altura)…	Merge turntable views (height images)…
+Virar	Flip
+‹esquerda, direita›	‹left, right›
+‹frente, trás›	‹front, back›
+‹cima, baixo›	‹top, bottom›
+Rodar 90°	Rotate 90°
+Em X	About X
+Em Y	About Y
+Em Z	About Z
+Repor coordenadas (centro na origem)	Reset coordinates (center at origin)
+Alinhar à caixa envolvente mínima	Align to smallest bounding box
+Vista explodida…	Exploded view…
+Montar (desfazer explosão)	Assemble (undo explode)
+Juntar dois objetos	Join two objects
+Embutir objeto 1 no objeto 2…	Bury object 1 in object 2…
+Cortes avançados	Advanced cuts
+Corte com encaixes (cavilha / pino / íman)…	Cut with connectors (dowel / pin / magnet)…
+Corte radial (fatias de bolo)…	Radial cut (cake slices)…
+Corte modular (pelo tamanho da impressora)…	Modular cut (by printer size)…
+Corte natural (nos pontos mais estreitos)…	Natural cut (at narrowest points)…
+Corte por região (caixa)…	Regional cut (box)…
+Corte desfasado (tijolos)…	Staggered cut (bricks)…
+Relevo projetado (tatuagem / gravado / embutido)…	Projected relief (tattoo / engrave / inlay)…
+Numerar peças (gravar número)…	Number parts (engrave number)…
+Malha → mapa de altura (imagem)…	Mesh → height map (image)…
+Vista em corte (plano de secção)…	Section view (cutting plane)…
+Desligar vista em corte	Turn off section view
+Caixa envolvente mínima (orientada)	Smallest bounding box (oriented)
+Informação das peças (lista)	Part information (list)
+Impressora: definições…	Printer: settings…
+Impressora: cabe na mesa?	Printer: does it fit the bed?
+Impressora: filamento e tempo estimados…	Printer: estimated filament and time…
+Impressora: distribuir por mesas…	Printer: distribute over plates…
+Acessórios	Accessories
+Suporte em pé para foto/litofania…	Standing holder for photo/lithophane…
+Gancho para pendurar…	Hanging hook…
+Garra / clip em U…	U clip / claw…
+Pilar decorativo…	Decorative pillar…
+Inserir	Insert
+Arco (3 cliques)	Arc (3 clicks)
+Leque (setor de coroa)…	Fan (annular sector)…
+Forma básica…	Basic shape…
+Curva (espiral, onda, dente de serra…)…	Curve (spiral, wave, sawtooth…)…
+Texto com tipo de letra…	Text with font…
+Estilo da seleção	Selection style
+Cor do traço…	Stroke color…
+Cor de preenchimento…	Fill color…
+Sem preenchimento	No fill
+Espessura da linha…	Line width…
+Tipo de linha…	Line style…
+Setas nas pontas…	Arrowheads…
+Ordem	Order
+Trazer para a frente	Bring to front
+Enviar para trás	Send to back
+Copiar	Copy
+Colar	Paste
+Lista de formas (nomes, mostrar/ocultar)…	Shape list (names, show/hide)…
+Mostrar/ocultar réguas	Show/hide rulers
+Padrão de recorte dentro da forma…	Cut-out pattern inside shape…
+Imagem → meio-tom vetorial (laser)…	Image → vector halftone (laser)…
+Fotografia → vetor por níveis…	Photo → vector by levels…
+Exportar EPS…	Export EPS…
+Importar dados ASCII (colunas)…	Import ASCII data (columns)…
+Série a partir de valores…	Series from values…
+Perfil da imagem atual (linha/coluna)…	Current image profile (row/column)…
+Imagem A (X) contra imagem B (Y)	Image A (X) vs image B (Y)
+Histograma da imagem atual	Current image histogram
+Imagem atual como mapa de cores…	Current image as color map…
+Área das secções de um objeto 3D ao longo de Z	Section area of a 3D object along Z
+Tipo das séries…	Series type…
+Títulos e eixos…	Titles and axes…
+Limites dos eixos…	Axis limits…
+Legenda / grelha / log / polar…	Legend / grid / log / polar…
+Ver dados	View data
+Limpar gráfico	Clear chart
+Guardar figura (PNG/SVG/PDF)…	Save figure (PNG/SVG/PDF)…
+Guardar dados da figura (.fgs)…	Save figure data (.fgs)…
+Abrir dados de figura (.fgs)…	Open figure data (.fgs)…
+Máscaras	Masks
+Criar máscara por intervalo de valores…	Create mask from value range…
+Preencher dentro/fora da máscara (A, máscara B)…	Fill inside/outside mask (A, mask B)…
+Usar imagem como máscara de qualidade da atual	Use image as quality mask of current
+Cor (mais)	Color (more)
+Camada de cor…	Color layer…
+Cor → intensidade…	Color → intensity…
+Copiar cor de B para a intensidade de A	Copy color of B onto intensity of A
+Mapa de vetores do gradiente…	Gradient vector map…
+Janela (Hann/Hamming…) antes da FFT…	Window (Hann/Hamming…) before FFT…
+Redimensionar com interpolação…	Resize with interpolation…
+Rodar com tela alargada…	Rotate with expanded canvas…
+Alinhamento elástico (B → A)	Elastic alignment (B → A)
+Histograma 2D (A, B)	2D histogram (A, B)
+Inserir imagem B dentro de A…	Insert image B into A…
+Projeções em X e Y (gráfico)	X and Y projections (chart)
+Caminho mínimo entre dois pontos…	Minimum path between two points…
+Limiar pelo método dos dois picos	Two-peak threshold
+Integrar ao longo de X/Y…	Integrate along X/Y…
+Variância local…	Local variance…
+Média ponderada (imagens, pesos = última)	Weighted mean (images, weights = last)
+Lupa	Magnifier
+Pré-visualizar várias imagens	Preview several images
+Imagem seguinte	Next image
+Imagem anterior	Previous image
+Primeira imagem	First image
+Última imagem	Last image
+Renomear imagem…	Rename image…
+Exportar como ICO/XPM…	Export as ICO/XPM…
+Fase → altura com dois planos de referência (objeto, plano 1, plano 2)…	Phase → height with two reference planes (object, plane 1, plane 2)…
+Fundir dois mapas de profundidade (Z1, Z2[, Q1, Q2])…	Fuse two depth maps (Z1, Z2[, Q1, Q2])…
+DIC numa sequência de imagens…	DIC on an image sequence…
+Calibração multivista (uma câmara)…	Multi-view calibration (one camera)…
+Corrigir distorção radial (manual)…	Correct radial distortion (manual)…
+Nuvem (objeto 3D) → grelha regular (mapa de altura)…	Cloud (3D object) → regular grid (height map)…
+Feixe cónico: projeções → volume (FDK)…	Cone beam: projections → volume (FDK)…
+Feixe cónico: fantasma + projeções de teste…	Cone beam: phantom + test projections…
+Português	Portuguese
+English	English
+Aba de colagem (mm)	Glue tab (mm)
+Abertura em baixo (mm)	Bottom opening (mm)
+Afastamento (fração)	Spread (fraction)
+Afastar (mm)	Spread (mm)
+Afastar as partes (mm)	Separate parts (mm)
+Afastar peças (mm)	Separate pieces (mm)
+Alargar a tela	Expand canvas
+Altura	Height
+Altura (mm)	Height (mm)
+Altura (mm, 0 = proporcional)	Height (mm, 0 = proportional)
+Altura (px)	Height (px)
+Altura da camada (mm)	Layer height (mm)
+Altura da chapa (mm)	Sheet height (mm)
+Altura das letras (mm)	Letter height (mm)
+Altura de camada (mm)	Layer height (mm)
+Altura do plano 1 (mm)	Plane 1 height (mm)
+Altura do plano 2 (mm)	Plane 2 height (mm)
+Altura do relevo (mm)	Relief height (mm)
+Altura dos números (mm)	Number height (mm)
+Altura máxima (mm)	Maximum height (mm)
+Altura tampa sobreposta (mm)	Overlapping lid height (mm)
+Alvo	Target
+Amplitude (mm)	Amplitude (mm)
+Anel de base (mm, 0 = sem)	Base ring (mm, 0 = none)
+Anonimizar	Anonymize
+Aquisição automática	Automatic acquisition
+Aresta máxima (mm)	Maximum edge (mm)
+Aresta máxima (mm, 0 = sem limite)	Maximum edge (mm, 0 = no limit)
+Arestas	Edges
+Aritmética	Arithmetic
+Automático	Automatic
+Base (mm)	Base (mm)
+Base (mm, se sólido)	Base (mm, if solid)
+Base de candeeiro	Lamp base
+Base por baixo (mm, 0 = sem)	Base underneath (mm, 0 = none)
+Bits (0 = automático)	Bits (0 = automatic)
+Bloco (adaptativo)	Block (adaptive)
+Bloco (px)	Block (px)
+Bloco (px, ímpar)	Block (px, odd)
+Brilho especular (0–1)	Specular shine (0–1)
+Brilho mínimo	Minimum brightness
+Caixa com juntas em dente	Finger-joint box
+Caixa com tampa	Box with lid
+Caixas encaixadas	Nested boxes
+Calibração	Calibration
+Calibração estéreo	Stereo calibration
+Calibração multivista	Multi-view calibration
+Camada de cor	Color layer
+Caminho mínimo	Minimum path
+Canal	Channel
+Caneluras	Flutes
+Cantos	Corners
+Cantos internos (colunas)	Inner corners (columns)
+Cantos internos (linhas)	Inner corners (rows)
+Carimbo	Stamp
+Caudal médio (mm³/s)	Average flow (mm³/s)
+Cavilha	Dowel
+Centro X	Center X
+Centro Y	Center Y
+Centro horizontal (mm)	Horizontal center (mm)
+Centro vertical (mm)	Vertical center (mm)
+Claro = alto	Light = high
+Coerência (luz branca)	Coherence (white light)
+Colagem	Collage
+Colunas	Columns
+Colunas (0 = automático)	Columns (0 = automatic)
+Começar em	Start at
+Componente	Component
+Comprimento (mm)	Length (mm)
+Comprimento / diâmetro (mm)	Length / diameter (mm)
+Comprimento de onda (nm)	Wavelength (nm)
+Comprimento do pino (mm)	Pin length (mm)
+Comprimento mínimo (px)	Minimum length (px)
+Confiança mínima	Minimum confidence
+Constante C (adaptativo)	Constant C (adaptive)
+Contornos	Contours
+Contraste de speckle	Speckle contrast
+Cor → intensidade	Color → intensity
+Correlacionar	Correlate
+Correlação mínima	Minimum correlation
+Cortar por plano	Plane cut
+Corte com encaixes	Cut with connectors
+Corte desfasado	Staggered cut
+Corte modular	Modular cut
+Corte natural	Natural cut
+Corte por região	Regional cut
+Corte radial	Radial cut
+Costura	Stitch
+Curva	Curve
+Curvatura	Curvature
+Curvatura da malha	Mesh curvature
+Câmara	Camera
+Célula (mm)	Cell (mm)
+Célula (px)	Cell (px)
+Círculos	Circles
+Código de Gray	Gray code
+Cópias	Copies
+Cópias de cada peça	Copies of each piece
+Dados	Data
+Dados brutos	Raw data
+Definir região	Set region
+Deflectometria	Deflectometry
+Deformação exx	Strain exx
+Deformações	Strains
+Densidade (g/cm³, PLA 1.24, PETG 1.27, ABS 1.04)	Density (g/cm³, PLA 1.24, PETG 1.27, ABS 1.04)
+Densificar	Densify
+Dentro da máscara (senão fora)	Inside the mask (else outside)
+Desfasamento inicial (°)	Initial phase shift (°)
+Desfasamentos (°, vazio = 360/N uniformes)	Phase shifts (°, empty = uniform 360/N)
+Deslocar X (mm)	Shift X (mm)
+Deslocar Y/Z (mm)	Shift Y/Z (mm)
+Desvio	Offset
+Desvio inicial (bytes)	Initial offset (bytes)
+Dicionário	Dictionary
+Direção	Direction
+Disparidade	Disparity
+Disparidades (múltiplo de 16)	Disparities (multiple of 16)
+Distorção radial	Radial distortion
+Distribuir por mesas	Distribute over plates
+Distância (mm, negativo = para dentro)	Distance (mm, negative = inward)
+Distância (mm, negativo encolhe)	Distance (mm, negative shrinks)
+Distância (px)	Distance (px)
+Distância de reconstrução (mm, negativa = imagem virtual)	Reconstruction distance (mm, negative = virtual image)
+Distância entre pontos (mesma unidade dos deslocamentos)	Point spacing (same unit as displacements)
+Distância focal (px, 0 = automática)	Focal length (px, 0 = automatic)
+Distância fonte–detetor (mm)	Source–detector distance (mm)
+Distância fonte–eixo (mm)	Source–axis distance (mm)
+Distância mínima (px)	Minimum distance (px)
+Distância mínima entre centros (px)	Minimum distance between centers (px)
+Dividir em grelha	Split in grid
+Dividir radialmente	Split radially
+Divisão perpendicular a	Split perpendicular to
+Diâmetro (mm)	Diameter (mm)
+Diâmetro (mm, com folga)	Diameter (mm, with clearance)
+Diâmetro da ferramenta / feixe (mm)	Tool / beam diameter (mm)
+Diâmetro da litofania (mm)	Lithophane diameter (mm)
+Diâmetro do canal (mm)	Sprue diameter (mm)
+Diâmetro do filamento (mm)	Filament diameter (mm)
+Diâmetro em baixo (mm)	Bottom diameter (mm)
+Diâmetro em cima (mm)	Top diameter (mm)
+Dois planos de referência	Two reference planes
+Ecrã	Screen
+Ecrã do projetor	Projector screen
+Efeito	Effect
+Eixo	Axis
+Eixo X	X axis
+Eixo Y	Y axis
+Eixo de rotação X (px)	Rotation axis X (px)
+Elevação da luz (°)	Light elevation (°)
+Em torno de X (°)	About X (°)
+Em torno de Y (°)	About Y (°)
+Em torno de Z (°)	About Z (°)
+Embutir	Bury
+Encaixe	Connector
+Encaixes	Connectors
+Enchimento (%)	Infill (%)
+Entrada/saída	Lead-in/out
+Escala	Scale
+Escala (mm por px de desvio)	Scale (mm per px of shift)
+Escala (px por módulo)	Scale (px per module)
+Escala de Z	Z scale
+Escalar	Scale
+Escalar para tamanho	Scale to size
+Escuros sobre claro	Dark on light
+Espaçamento (mm)	Spacing (mm)
+Espaçamento (px)	Spacing (px)
+Espaçamento X/Y (mm)	X/Y spacing (mm)
+Espaçamento Z (mm)	Z spacing (mm)
+Espaçamento do tramado (mm)	Hatch spacing (mm)
+Espaço (px)	Gap (px)
+Espaço entre camadas no desenho (mm)	Gap between layers in drawing (mm)
+Espaço entre peças (mm)	Gap between pieces (mm)
+Espelhar	Mirror
+Espera antes de cada foto (s)	Wait before each photo (s)
+Espera após mover (s)	Wait after moving (s)
+Espera após rodar (s)	Wait after rotating (s)
+Espessura	Thickness
+Espessura (mm)	Thickness (mm)
+Espessura (px no ecrã; ×0,1 mm no SVG)	Width (px on screen; ×0.1 mm in SVG)
+Espessura 3D (mm, 0 = só 2D para laser)	3D thickness (mm, 0 = 2D only for laser)
+Espessura a prender (mm)	Thickness to hold (mm)
+Espessura da base (mm)	Base thickness (mm)
+Espessura da chapa (mm)	Sheet thickness (mm)
+Espessura da foto (mm)	Photo thickness (mm)
+Espessura da parede (mm)	Wall thickness (mm)
+Espessura das paredes (mm)	Wall thickness (mm)
+Espessura de cada camada/chapa (mm)	Thickness of each layer/sheet (mm)
+Espessura máx. (mm)	Max thickness (mm)
+Espessura máx. da litofania (mm)	Max lithophane thickness (mm)
+Espessura máxima (mm)	Maximum thickness (mm)
+Espessura mín. (mm)	Min thickness (mm)
+Espessura mínima (mm)	Minimum thickness (mm)
+Esticar contraste	Stretch contrast
+Estimativa	Estimate
+Estrutura em arame	Wireframe structure
+Exportar lote	Export batch
+Extremos locais	Local extrema
+Extrudir	Extrude
+FDK (feixe cónico)	FDK (cone beam)
+Face	Face
+Fantasma 3D	3D phantom
+Fase embrulhada	Wrapped phase
+Fase → altura	Phase → height
+Fase → deformação	Phase → deformation
+Fatiar em camadas	Slice into layers
+Fatias em X	Slices in X
+Fatias em Y	Slices in Y
+Fatias radiais	Radial slices
+Fator	Factor
+Fator (mm por radiano)	Factor (mm per radian)
+Feixe cónico de teste	Test cone beam
+Filtrar fase desembrulhada	Filter unwrapped phase
+Filtrar fase embrulhada	Filter wrapped phase
+Filtro	Filter
+Filtro em frequência	Frequency filter
+Foco total	All in focus
+Folga (mm)	Clearance (mm)
+Fonte	Source
+Forma	Shape
+Forma básica	Basic shape
+Forma envolvente	Bounding shape
+Formato	Format
+Fotografia → vetor	Photo → vector
+Franjas	Fringes
+Fraunhofer (campo distante)	Fraunhofer (far field)
+Fração de triângulos a manter	Fraction of triangles to keep
+Fresnel (campo próximo)	Fresnel (near field)
+Fundir profundidade	Fuse depth
+Fundo/tampo (mm)	Bottom/top (mm)
+Furo (mm)	Hole (mm)
+Furo do cabo (mm)	Cable hole (mm)
+Furo do casquilho (mm)	Socket hole (mm)
+Furo para pendurar (mm, 0 = sem)	Hanging hole (mm, 0 = none)
+Gama	Gamma
+Gama (<1 clareia, >1 escurece)	Gamma (<1 lightens, >1 darkens)
+Gancho	Hook
+Ganho	Gain
+Ganho (declive por radiano)	Gain (slope per radian)
+Garra	Clip
+Gerar ArUco	Generate ArUco
+Gerar QR	Generate QR
+Gerar grelha	Generate grid
+Gradiente	Gradient
+Grelha	Grid
+Grelha de círculos	Circle grid
+Grelha de fatias	Slice grid
+Grelha regular	Regular grid
+Holografia	Holography
+Identificador	Identifier
+Iluminação	Lighting
+Imagem sintética	Synthetic image
+Imagens por segundo	Frames per second
+Impressora	Printer
+Imprima na vertical para melhor qualidade.	Print upright for best quality.
+Inclinação (°)	Tilt (°)
+Incluir furos	Include holes
+Inflar / encolher	Inflate / deflate
+Integrar	Integrate
+Intensidade do filtro (0,01–0,99)	Filter strength (0.01–0.99)
+Interpolação	Interpolation
+Intervalo (mm)	Gap (mm)
+Intervalo máximo (px)	Maximum gap (px)
+Início X	Start X
+Início Y	Start Y
+Isolinhas	Iso-contours
+Isosuperfície	Iso-surface
+Iterações	Iterations
+Janela	Window
+Janela (px)	Window (px)
+Janela de foco (px)	Focus window (px)
+Kerf	Kerf
+Lados	Sides
+Largura	Width
+Largura (mm)	Width (mm)
+Largura (px)	Width (px)
+Largura da chapa (mm)	Sheet width (mm)
+Largura da foto (mm)	Photo width (mm)
+Largura da mesa (mm)	Bed width (mm)
+Largura das barras (fração)	Bar width (fraction)
+Largura do bloco (mm)	Block width (mm)
+Largura do corte (mm)	Kerf width (mm)
+Largura do dente (mm)	Finger width (mm)
+Largura exterior (mm)	Outer width (mm)
+Largura máxima da peça (mm)	Maximum piece width (mm)
+Legenda	Legend
+Legenda da barra de cores	Colorbar label
+Leque	Fan
+Limiar	Threshold
+Limiar (fração do máximo)	Threshold (fraction of max)
+Limiar alto (Canny)	High threshold (Canny)
+Limiar baixo (Canny)	Low threshold (Canny)
+Limiar de modulação (fração do máximo)	Modulation threshold (fraction of max)
+Limiarizar (Otsu) se não for binária	Threshold (Otsu) if not binary
+Limiarizar automaticamente (Otsu) se não for binária	Auto-threshold (Otsu) if not binary
+Limitar extremos	Clamp extremes
+Limites	Limits
+Linha de referência (px, vazio = mediana)	Reference row (px, empty = median)
+Linhas	Rows
+Litofania	Lithophane
+Litofania cilíndrica	Cylindrical lithophane
+Litofania esférica	Spherical lithophane
+Lote 1 (op) Lote 2	Batch 1 (op) Batch 2
+Low poly	Low poly
+Luz ambiente (0–1)	Ambient light (0–1)
+Luz difusa (0–1)	Diffuse light (0–1)
+Lóbulos	Lobes
+Manter	Keep
+Manter (% das faces)	Keep (% of faces)
+Mapa	Map
+Mapa de altura	Height map
+Mapa de cores	Color map
+Mapa de profundidade → 3D	Depth map → 3D
+Mapa de vetores	Vector map
+Margem (mm)	Margin (mm)
+Margem de segurança (mm)	Safety margin (mm)
+Matiz máxima (0–179)	Maximum hue (0–179)
+Matiz mínima (0–179)	Minimum hue (0–179)
+Matriz	Array
+Matriz 3×3 (linhas separadas por ;)	3×3 matrix (rows separated by ;)
+Matriz projetiva	Projective matrix
+Meio-tom	Halftone
+Meio-tom vetorial	Vector halftone
+Mesa	Bed
+Mesa linear	Linear stage
+Mesa rotativa	Turntable
+Modelo	Model
+Modo	Mode
+Mola	Spring
+Molde	Mold
+Moldura (mm)	Border (mm)
+Moldura (mm, 0 = sem)	Frame (mm, 0 = none)
+Morfologia	Morphology
+Mosaico	Mosaic
+Mostrar	Show
+Mover	Move
+Movimento	Motion
+Multi-frequência	Multi-frequency
+Máquina	Machine
+Máscara	Mask
+Máximo	Maximum
+Máximo de arestas	Maximum edges
+Máximo de frames	Maximum frames
+Método	Method
+Mínimo	Minimum
+Negrito	Bold
+Nome	Name
+Normal	Normal
+Normal X (personalizada)	Normal X (custom)
+Normal do plano	Plane normal
+Numerar peças	Number parts
+Nuvem de pontos	Point cloud
+Níveis	Levels
+Nível	Level
+Número	Number
+Número de cortes	Number of cuts
+Número de fatias	Number of slices
+Número de níveis	Number of levels
+Número de passos	Number of steps
+Número de vistas	Number of views
+Número de ângulos	Number of angles
+Ondulação (fração)	Ripple (fraction)
+Opacidade	Opacity
+Opacidade (%)	Opacity (%)
+Opacidade (0–1)	Opacity (0–1)
+Operação	Operation
+Opções	Options
+Ordem (0–5)	Order (0–5)
+Ordem de bytes	Byte order
+Organizar	Arrange
+Padrão	Pattern
+Padrão de recorte	Cut-out pattern
+Parede (mm)	Wall (mm)
+Parede entre células (mm)	Wall between cells (mm)
+Partes em X	Parts in X
+Partes em Y	Parts in Y
+Partes em Z	Parts in Z
+Partição em grelha	Grid partition
+Partição por planos	Partition by planes
+Passagens	Passes
+Passo (1 = máximo detalhe)	Step (1 = full detail)
+Passo (mm)	Step (mm)
+Passo (px)	Step (px)
+Passo (tamanho do pixel)	Step (pixel size)
+Passo (°)	Step (°)
+Passo / período (px)	Pitch / period (px)
+Passo X (mm)	Step X (mm)
+Passo Y (mm)	Step Y (mm)
+Passo angular (°)	Angular step (°)
+Passo da grelha (px)	Grid step (px)
+Passos	Steps
+Passos (px) de cada fase, pela ordem da lista	Pitches (px) of each phase, in list order
+Pega (mm)	Handle (mm)
+Percentil alto	High percentile
+Percentil baixo	Low percentile
+Percurso de ferramenta	Toolpath
+Perfil	Profile
+Período (mm)	Period (mm)
+Período (px)	Period (px)
+Pilar	Pillar
+Pilha	Stack
+Pinos de encaixe	Connector pins
+Pinos por face	Pins per face
+Pirâmide	Pyramid
+Pixel do detetor (mm)	Detector pixel (mm)
+Planificar tronco de cone	Unroll truncated cone
+Polar (X em radianos)	Polar (X in radians)
+Polinómio	Polynomial
+Pontas planas	Flat ends
+Pontes	Bridges
+Pontes por contorno	Bridges per contour
+Porta-chaves	Keychain
+Posição (mm)	Position (mm)
+Posição ao longo do eixo (mm)	Position along axis (mm)
+Posição final (mm)	End position (mm)
+Posição inicial (mm)	Start position (mm)
+Posições (mm, separadas por vírgulas)	Positions (mm, comma separated)
+Potência laser (S)	Laser power (S)
+Poupa material na impressão. Resoluções altas são mais lentas.	Saves material when printing. Higher resolutions are slower.
+Preencher	Fill
+Prefixo	Prefix
+Primeira coluna/linha é o X	First column/row is X
+Primeiro nível	First level
+Prisma	Prism
+Procura (px)	Search (px)
+Profundidade (fatias, 3D)	Depth (slices, 3D)
+Profundidade (mm)	Depth (mm)
+Profundidade (mm, + relevo, − gravado)	Depth (mm, + relief, − engraved)
+Profundidade da mesa (mm)	Bed depth (mm)
+Profundidade do bloco (mm)	Block depth (mm)
+Profundidade estéreo	Stereo depth
+Profundidade por foco	Depth from focus
+Profundidade total (mm, CNC)	Total depth (mm, CNC)
+Projetar de	Project from
+Projete estas imagens com um projetor e fotografe cada uma.	Project these images with a projector and photograph each one.
+Projetor	Projector
+Projeção	Projection
+Projeções	Projections
+Projeções (360°)	Projections (360°)
+Projeções → volume	Projections → volume
+Puzzle	Puzzle
+Quadrados	Squares
+Qualidade	Quality
+Quantidade	Quantity
+Radon	Radon
+Raio (mm)	Radius (mm)
+Raio (px)	Radius (px)
+Raio 1 (px na FFT)	Radius 1 (px in FFT)
+Raio 2 (banda)	Radius 2 (band)
+Raio a meio (mm)	Middle radius (mm)
+Raio da mola (mm)	Spring radius (mm)
+Raio das barras (mm)	Strut radius (mm)
+Raio de cálculo (mm)	Computation radius (mm)
+Raio de procura (px)	Search radius (px)
+Raio do arame (mm)	Wire radius (mm)
+Raio do furo de escoamento (mm, 0 = sem)	Drain hole radius (mm, 0 = none)
+Raio do pino (mm)	Pin radius (mm)
+Raio dos cantos (mm)	Corner radius (mm)
+Raio dos cantos (retângulo)	Corner radius (rectangle)
+Raio dos pinos (mm)	Pin radius (mm)
+Raio exterior	Outer radius
+Raio interior	Inner radius
+Raio máximo (px, 0 = sem)	Maximum radius (px, 0 = none)
+Raio mínimo (px)	Minimum radius (px)
+Raio na base (mm)	Base radius (mm)
+Raio no topo (mm)	Top radius (mm)
+Rebordo da tampa (mm)	Lid lip (mm)
+Recortar	Crop
+Redimensionar	Resize
+Redução de speckle	Speckle reduction
+Relevo	Relief
+Relevo (mm)	Relief (mm)
+Relevo com moldura	Framed relief
+Relevo do texto (mm)	Text relief (mm)
+Relevo projetado	Projected relief
+Remover plano de inclinação	Remove tilt plane
+Resolução (px)	Resolution (px)
+Resolução (voxels no maior lado)	Resolution (voxels on longest side)
+Resolução (voxels)	Resolution (voxels)
+Resolução máx. (px)	Max resolution (px)
+Retroprojeção filtrada	Filtered back-projection
+Revolução	Revolution
+Rodar	Rotate
+Rodar imagem	Rotate image
+Rotação (°)	Rotation (°)
+Rotação fresa (rpm)	Spindle speed (rpm)
+Rotação total (°)	Total rotation (°)
+Rotações	Rotations
+Ruído	Noise
+SART	SART
+Saltar pixels	Skip pixels
+Saltar pixels (1 = todos)	Skip pixels (1 = all)
+Saturação mínima	Minimum saturation
+Secção	Section
+Segmentação por cor	Color segmentation
+Segmentos	Segments
+Seguir zonas escuras	Follow dark areas
+Sem tampa	No lid
+Sensibilidade (menor = mais círculos)	Sensitivity (lower = more circles)
+Seta no fim	Arrow at end
+Seta no início	Arrow at start
+Setas	Arrows
+Setores	Sectors
+Sigma	Sigma
+Sigma (px)	Sigma (px)
+Simplificar	Simplify
+Simplificação (px)	Simplification (px)
+Simétrica	Symmetric
+Speckle de teste	Test speckle
+Suavizar	Smooth
+Suavização	Smoothing
+Suavização (px)	Smoothing (px)
+Subconjunto (px)	Subset (px)
+Subconjunto (px, ímpar)	Subset (px, odd)
+Substituir valor	Replace value
+Suporte em pé	Standing holder
+Suportes	Supports
+Série	Series
+Séries em	Series in
+Só em contornos com mais de (mm)	Only on contours longer than (mm)
+Sólido fechado (para imprimir)	Closed solid (for printing)
+Tamanho	Size
+Tamanho (mm)	Size (mm)
+Tamanho (px)	Size (px)
+Tamanho (px, ímpar)	Size (px, odd)
+Tamanho da célula (mm)	Cell size (mm)
+Tamanho da grelha (mm)	Grid size (mm)
+Tamanho de saída (px, 0 = automático)	Output size (px, 0 = automatic)
+Tamanho do elemento (px)	Element size (px)
+Tamanho do encaixe (mm)	Joint size (mm)
+Tamanho do pixel (mm)	Pixel size (mm)
+Tamanho do pixel (mm, 0 = px)	Pixel size (mm, 0 = px)
+Tamanho do pixel (µm)	Pixel size (µm)
+Tamanho do quadrado (mm)	Square size (mm)
+Tamanho do voxel (mm)	Voxel size (mm)
+Tempo de máquina	Machine time
+Tempo por imagem (s)	Time per image (s)
+Texto (se fonte = texto)	Text (if source = text)
+Texto 3D	3D text
+Texto em relevo / gravado	Embossed / engraved text
+Textura	Texture
+Tipo	Type
+Tipo de letra	Font
+Tipo de linha	Line style
+Tipo de tampa	Lid type
+Tipo de todas as séries	Type of all series
+Tipos	Types
+Tolerância	Tolerance
+Torção (°)	Twist (°)
+Transformação linear	Linear transform
+Transição	Morph
+Translação X (px)	Translation X (px)
+Transparência	Transparency
+Transparência da janela	Window transparency
+Título	Title
+Títulos	Titles
+Unidade	Unit
+Unidades	Units
+Uniforme	Uniform
+Uniforme (%)	Uniform (%)
+Unir num só objeto	Merge into one object
+Usa as formas 2D selecionadas.	Uses the selected 2D shapes.
+Usar 1 frame em cada	Use 1 frame every
+Use uma diferença de fase já desembrulhada.	Use an already unwrapped phase difference.
+Valor	Value
+Valor (fixo)	Value (fixed)
+Valor antigo	Old value
+Valor fora da máscara	Value outside mask
+Valor novo	New value
+Variante	Variant
+Variância local	Local variance
+Varrimento por linha	Line scan
+Vaso	Vase
+Velocidade de corte (mm/min)	Cutting speed (mm/min)
+Velocidade de descida (mm/min, CNC)	Plunge speed (mm/min, CNC)
+Velocidade em vazio (mm/min)	Travel speed (mm/min)
+Vetor → bitmap	Vector → bitmap
+Vetorizar	Vectorize
+Vista de	View from
+Vista em corte	Section view
+Vista explodida	Exploded view
+Visual hull	Visual hull
+Voltas	Turns
+Voltas (espiral)	Turns (spiral)
+Votos mínimos	Minimum votes
+Voxelizar	Voxelize
+Voxels XY (0 = automático)	Voxels XY (0 = automatic)
+Voxels Z (0 = automático)	Voxels Z (0 = automatic)
+Vídeo	Video
+X (%) se não uniforme	X (%) if not uniform
+X (separados por espaço/vírgula; vazio = 0,1,2…)	X (space/comma separated; empty = 0,1,2…)
+X final	End X
+X inicial	Start X
+X logarítmico	Logarithmic X
+X máx	X max
+X mín	X min
+Y (linha de base)	Y (baseline)
+Y final	End Y
+Y inicial	Start Y
+Y logarítmico	Logarithmic Y
+Y máx	Y max
+Y mín	Y min
+Z final (mm)	End Z (mm)
+Z final (µm)	End Z (µm)
+Z inicial (mm)	Start Z (mm)
+Z inicial (µm)	Start Z (µm)
+Z máx	Z max
+Z mín	Z min
+Z seguro (mm, CNC)	Safe Z (mm, CNC)
+a cada 15°	every 15°
+a cada 45°	every 45°
+adaptativo	adaptive
+aleatória	random
+anéis	rings
+banda desenhada	cartoon
+botão	knob
+cada par consecutivo	each consecutive pair
+caixa alinhada	aligned box
+caixa mínima	smallest box
+cauda de andorinha	dovetail
+cavilha	dowel
+cilíndrica	cylindrical
+colunas	columns
+com a primeira	with the first
+contorno exterior	outer contour
+contorno interior	inner contour
+contínua	solid
+círculo mínimo	smallest circle
+cúbica	cubic
+dente de serra	sawtooth
+desenho a lápis	pencil sketch
+desfocar	blur
+diferença abs.	abs. difference
+digitalização (planar)	scans (planar)
+dilatar	dilate
+erodir	erode
+abrir	open
+fechar	close
+direção	direction
+dividir	divide
+somar	add
+subtrair	subtract
+multiplicar	multiply
+em X	in X
+em Y	in Y
+encaixe	fitted
+entrada	lead-in
+entrada e saída	lead-in and lead-out
+espectro angular	angular spectrum
+espiral	spiral
+onda	wave
+frente (−Y)	front (−Y)
+gaussiana	gaussian
+gaussiano	gaussian
+gradiente	gradient
+grelha de círculos	circle grid
+hexágono	hexagon
+hexágonos	hexagons
+quadrados	squares
+losangos	diamonds
+círculos	circles
+triângulos	triangles
+ranhuras	slots
+imagem atual	current image
+invólucro convexo	convex hull
+irregularidade	irregularity
+lado negativo	negative side
+lado positivo	positive side
+laplaciano	laplacian
+linha	line
+pontos	points
+linha e pontos	line and points
+barras	bars
+degraus	steps
+histograma	histogram
+little-endian (Intel/C)	little-endian (Intel/C)
+luminância	luminance
+magnitude	magnitude
+melhor qualidade	best quality
+máxima	maximum
+máximos	maxima
+média ponderada	weighted mean
+mínima	minimum
+mínimos	minima
+nitidez	sharpen
+onda quadrada	square wave
+passa-alto	high-pass
+passa-baixo	low-pass
+passa-banda	band-pass
+rejeita-banda	band-stop
+personalizada	custom
+pintura	painting
+pixelizar	pixelate
+polegada	inch
+pontilhada	dotted
+tracejada	dashed
+traço longo	long dash
+traço-ponto	dash-dot
+projetivo	projective
+semelhança	similarity
+realçar detalhe	detail enhance
+retângulo arredondado	rounded rectangle
+sal e pimenta	salt and pepper
+saturação	saturation
+saída	lead-out
+sobre a linha	on the line
+sobreposta	overlapping
+subtrair	subtract
+sépia	sepia
+série	series
+tabuleiro	chessboard
+tramado (laser)	hatching (laser)
+bolsa	pocket
+triangular	triangular
+valor absoluto	absolute value
+Área mínima (px²)	Minimum area (px²)
+Ângulo (°)	Angle (°)
+Ângulo (°, anti-horário)	Angle (°, counter-clockwise)
+Ângulo de saliência (°)	Overhang angle (°)
+Ângulo do tramado (°)	Hatch angle (°)
+Ângulo final (°)	End angle (°)
+Ângulo horizontal da luz (°)	Light horizontal angle (°)
+Ângulo inicial (°)	Start angle (°)
+Ângulo máximo (°)	Maximum angle (°)
+Ângulo total coberto (°)	Total angle covered (°)
+Ímanes	Magnets
+Índice	Index
+Índice da câmara	Camera index
+Último nível	Last level
+área	area
+volume	volume
+íman	magnet
+pino	pin
+fixo	fixed
+otsu	Otsu
+elipse	ellipse
+cruz	cross
+mediana	median
+média	mean
+estrela	star
+coração	heart
+losango	diamond
+forma D	D shape
+quadrado	square
+triângulo	triangle
+pentágono	pentagon
+octógono	octagon
+círculo	circle
+retângulo arredondado	rounded rectangle
+Retângulo arredondado	Rounded rectangle
+Pronto. Abra um modelo (⌘O) ou experimente Ficheiro ▸ Exemplos.	Ready. Open a model (⌘O) or try File ▸ Examples.
+Objetos 3D	3D objects
+Imagens	Images
+Registo	Log
+2D / Corte	2D / Cutting
+Imagem / Metrologia	Image / Metrology
+3D	3D
+Ferramentas	Tools
+Nesting	Nesting
+Exportar	Export
+Converter o modelo…	Convert the model…
+Converter	Convert
+Importar (dados)	Import (data)
+Abrir pasta de figura (.fgs + STL)…	Open figure folder (.fgs + STL)…
+Exportar como pasta de figura (.fgs + STL)…	Export as figure folder (.fgs + STL)…
+Litofania (18 formas)…	Lithophane (18 shapes)…
+Eixos em caixa — ligar / desligar	Boxed axes — on / off

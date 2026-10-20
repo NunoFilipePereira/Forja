@@ -14,7 +14,7 @@ FORMATS = {
     "Malhas 3D (STL, OBJ, PLY, OFF, 3MF, GLB)": ["stl", "obj", "ply", "off", "3mf", "glb"],
     "Imagens (PNG, JPEG, BMP, TIFF, GIF)": ["png", "jpg", "jpeg", "bmp", "tif", "tiff", "gif"],
     "Desenhos 2D (DXF, SVG)": ["dxf", "svg"],
-    "Projetos Forja (*.forja)": ["forja"],
+    "Projetos Forja 3D (*.forja)": ["forja"],
 }
 PAGE = 10
 

@@ -307,7 +307,7 @@ class Mesh2Actions:
         it = self.cur_image() if self.images else None
         b = o.mesh.bounds; c = b.mean(axis=0); e = o.mesh.extents
         v = self.ask("Relevo projetado", [("src", "Fonte", "imagem atual" if it else "texto", ["imagem atual", "texto"]),
-                                          ("t", "Texto (se fonte = texto)", "Forja"),
+                                          ("t", "Texto (se fonte = texto)", "Forja 3D"),
                                           ("dir", "Projetar de", "cima", ["cima", "frente", "lado"]),
                                           ("u", "Centro horizontal (mm)", float(round(c[0], 2))), ("v", "Centro vertical (mm)", float(round(c[1], 2))),
                                           ("w", "Largura (mm)", float(round(min(e[0], e[1]) * 0.6, 1))), ("h", "Altura (mm)", float(round(min(e[0], e[1]) * 0.6, 1))),

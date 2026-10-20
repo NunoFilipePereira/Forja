@@ -159,7 +159,7 @@ class GenActions:
 
     def gen_keychain(self):
         from ..core import text3d
-        v = self.ask("Porta-chaves", [("t", "Texto", "Forja"), ("shape", "Forma", "retângulo arredondado", ["retângulo arredondado"] + gn.SHAPES_2D),
+        v = self.ask("Porta-chaves", [("t", "Texto", "Forja 3D"), ("shape", "Forma", "retângulo arredondado", ["retângulo arredondado"] + gn.SHAPES_2D),
                                       ("w", "Largura (mm)", 50.0), ("d", "Altura (mm)", 20.0), ("th", "Espessura (mm)", 3.0),
                                       ("tt", "Relevo do texto (mm)", 1.5), ("hole", "Furo (mm)", 4.0)])
         if v:

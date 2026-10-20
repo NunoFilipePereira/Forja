@@ -83,7 +83,7 @@ def order_paths(paths):
 def gcode(paths, mode="cnc", feed=800, plunge=300, safe_z=5.0, depth=1.0, passes=1,
           power=1000, spindle=12000, travel_feed=3000):
     """Gera G-code. mode='cnc' (fresa com Z) ou 'laser' (M3/M4 S potência)."""
-    L = ["; Gerado por Forja", "G21 ; mm", "G90 ; absoluto", "G17"]
+    L = ["; Gerado pela Forja 3D", "G21 ; mm", "G90 ; absoluto", "G17"]
     paths = order_paths(paths)
     if mode == "laser":
         L += ["M5", f"G0 F{travel_feed}"]

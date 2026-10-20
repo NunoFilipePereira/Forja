@@ -105,7 +105,7 @@ def _pyr(v, s):
 # ===========================================================================
 # Texto, relevos, litofania
 # ===========================================================================
-@register("texto3d", "Texto 3D", [("t", "Texto", "Forja", None, "Texto"), ("font", "Tipo de letra", "Helvetica", None, "Texto"),
+@register("texto3d", "Texto 3D", [("t", "Texto", "Forja 3D", None, "Texto"), ("font", "Tipo de letra", "Helvetica", None, "Texto"),
                                   ("bold", "Negrito", True, None, "Texto"), ("size", "Altura das letras (mm)", 20.0, (0.1, 1e4), "Dimensões"),
                                   ("depth", "Espessura (mm)", 5.0, (0.01, 1e4), "Dimensões"), ("base", "Base por baixo (mm, 0 = sem)", 0.0, (0, 1e4), "Base"),
                                   ("margin", "Margem da base (mm)", 3.0, (0, 1e4), "Base"), ("rr", "Raio dos cantos da base (mm)", 2.0, (0, 1e4), "Base")])
@@ -236,7 +236,7 @@ def _spring(v, s):
 
 
 @register("porta_chaves", "Porta-chaves", [
-    ("t", "Texto", "Forja", None, "Texto"), ("shape", "Forma", "retângulo arredondado", ["retângulo arredondado"] + gn.SHAPES_2D, "Forma"),
+    ("t", "Texto", "Forja 3D", None, "Texto"), ("shape", "Forma", "retângulo arredondado", ["retângulo arredondado"] + gn.SHAPES_2D, "Forma"),
     ("w", "Largura (mm)", 50.0, (5, 1000), "Dimensões"), ("d", "Altura (mm)", 20.0, (5, 1000), "Dimensões"),
     ("th", "Espessura (mm)", 3.0, (0.4, 50), "Dimensões"), ("tt", "Relevo do texto (mm)", 1.5, (0, 20), "Texto"),
     ("hole", "Furo (mm)", 4.0, (0.5, 50), "Furo"),

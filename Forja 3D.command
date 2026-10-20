@@ -1,5 +1,5 @@
 #!/bin/bash
-# Lança a Forja. Na primeira vez (ou se a pasta mudar de sítio) cria o ambiente Python.
+# Lança a Forja 3D. Na primeira vez (ou se a pasta mudar de sítio) cria o ambiente Python.
 cd "$(dirname "$0")"
 PY=$(command -v python3.14 || command -v python3.13 || command -v python3.12 || command -v python3)
 if ! .venv/bin/python -c "import PySide6, trimesh, manifold3d" 2>/dev/null; then

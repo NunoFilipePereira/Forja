@@ -1,10 +1,10 @@
-# Forja
+# Forja 3D
 
-**Forja** é uma aplicação de secretária (macOS, Windows, Linux) para preparar modelos para **impressão 3D** e **corte laser/CNC**, processar **imagens** e fazer **metrologia ótica**, tudo num só programa e com a interface em português.
+**Forja 3D** é uma aplicação de secretária (macOS, Windows, Linux) para preparar modelos para **impressão 3D** e **corte laser/CNC**, processar **imagens** e fazer **metrologia ótica**, tudo num só programa e com a interface em português.
 
-A Forja é uma implementação própria, escrita de raiz em Python.
+A Forja 3D é uma implementação própria, escrita de raiz em Python.
 
-![Forja — painel Cortar com o plano de corte na vista 3D](docs/img/forja_cortar.png)
+![Forja 3D — painel Cortar com o plano de corte na vista 3D](docs/img/forja_cortar.png)
 
 ---
 
@@ -45,18 +45,18 @@ A Forja é uma implementação própria, escrita de raiz em Python.
 
 ## Transferir (pronto a usar)
 
-As versões compiladas estão na página **[Releases](https://github.com/NunoFilipePereira/Forja/releases/latest)**. Não é preciso instalar o Python.
+As versões compiladas estão na página **[Releases](https://github.com/NunoFilipePereira/Forja-3D/releases/latest)**. Não é preciso instalar o Python.
 
 | Sistema | Ficheiro | Como instalar |
 |---|---|---|
-| **Windows 10/11 (64 bits)** | `Forja-…-Windows-instalador.exe` | Execute o instalador. Cria atalhos no menu Iniciar e, se quiser, no ambiente de trabalho. |
-| Windows (sem instalar) | `Forja-…-Windows-portatil.zip` | Descomprima e abra `Forja.exe`. |
-| **Mac com Apple Silicon (M1–M4)** | `Forja-…-macOS-AppleSilicon.dmg` | Abra o `.dmg` e arraste a Forja para Aplicações. |
-| Mac com processador Intel | `Forja-…-macOS-Intel.dmg` | Igual ao anterior. |
+| **Windows 10/11 (64 bits)** | `Forja3D-…-Windows-instalador.exe` | Execute o instalador. Cria atalhos no menu Iniciar e, se quiser, no ambiente de trabalho. |
+| Windows (sem instalar) | `Forja3D-…-Windows-portatil.zip` | Descomprima e abra `Forja3D.exe`. |
+| **Mac com Apple Silicon (M1–M4)** | `Forja3D-…-macOS-AppleSilicon.dmg` | Abra o `.dmg` e arraste a Forja 3D para Aplicações. |
+| Mac com processador Intel | `Forja3D-…-macOS-Intel.dmg` | Igual ao anterior. |
 
 As versões ainda não estão assinadas digitalmente, por isso o sistema avisa na primeira vez:
 
-- **macOS:** clique com o botão direito em Forja ▸ **Abrir** ▸ **Abrir**. Em alternativa, use Definições do Sistema ▸ Privacidade e Segurança ▸ **Abrir mesmo assim**.
+- **macOS:** clique com o botão direito em Forja 3D ▸ **Abrir** ▸ **Abrir**. Em alternativa, use Definições do Sistema ▸ Privacidade e Segurança ▸ **Abrir mesmo assim**.
 - **Windows:** no aviso do SmartScreen, clique em **Mais informações** ▸ **Executar mesmo assim**.
 
 Na versão instalada, o registo de erros fica em `~/.forja/erros.log`.
@@ -67,13 +67,13 @@ Requisitos: **Python 3.12 ou mais recente** (testado com 3.12 e 3.14) e uma plac
 
 ### macOS: duplo clique
 
-Faça duplo clique em **`Forja.command`**. Na primeira vez cria o ambiente Python (`.venv`) e instala as dependências, o que demora alguns minutos. Nas vezes seguintes abre logo.
+Faça duplo clique em **`Forja 3D.command`**. Na primeira vez cria o ambiente Python (`.venv`) e instala as dependências, o que demora alguns minutos. Nas vezes seguintes abre logo.
 
 ### Pela linha de comandos
 
 ```bash
-git clone https://github.com/NunoFilipePereira/Forja.git
-cd Forja
+git clone https://github.com/NunoFilipePereira/Forja-3D.git
+cd Forja 3D
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m forja
@@ -113,7 +113,7 @@ As versões são compiladas com [PyInstaller](https://pyinstaller.org). A config
 .venv/bin/pyinstaller packaging/forja.spec --noconfirm
 ```
 
-O resultado fica em `dist/`: `Forja.app` no macOS e a pasta `Forja/` com `Forja.exe` no Windows. Cada sistema só compila a sua própria versão. O instalador do Windows é gerado pelo [Inno Setup](https://jrsoftware.org/isinfo.php) a partir de `packaging/forja.iss`.
+O resultado fica em `dist/`: `Forja 3D.app` no macOS e a pasta `Forja3D/` com `Forja3D.exe` no Windows. Cada sistema só compila a sua própria versão. O instalador do Windows é gerado pelo [Inno Setup](https://jrsoftware.org/isinfo.php) a partir de `packaging/forja.iss`.
 
 No GitHub, o processo `.github/workflows/build.yml` compila automaticamente para Windows, Mac Apple Silicon e Mac Intel. Quando se envia uma etiqueta de versão, publica tudo numa Release:
 
@@ -172,7 +172,7 @@ git push origin v1.0.0
 
 ## Menus e funções
 
-São 20 menus com cerca de 640 entradas. A descrição completa de cada entrada está no guia em PDF **[docs/Forja_menus.pdf](docs/Forja_menus.pdf)**.
+São 20 menus com cerca de 640 entradas. A descrição completa de cada entrada está no guia em PDF **[docs/Forja3D_menus.pdf](docs/Forja3D_menus.pdf)**.
 
 | Menu | O que tem |
 |---|---|
@@ -216,13 +216,13 @@ São 20 menus com cerca de 640 entradas. A descrição completa de cada entrada 
 O código tem cerca de 21 500 linhas de Python. As operações de cálculo ficam em `core/` e não dependem da interface; a interface fica em `ui/`.
 
 ```
-Forja/
-├── Forja.command          # arranque no macOS a partir do código (cria o .venv na primeira vez)
+Forja-3D/
+├── Forja 3D.command       # arranque no macOS a partir do código (cria o .venv na primeira vez)
 ├── packaging/             # compilação: PyInstaller (forja.spec), instalador Windows (forja.iss), ícones
 ├── .github/workflows/     # compilação automática para Windows e macOS
 ├── requirements.txt
 ├── docs/
-│   ├── Forja_menus.pdf    # guia de todos os menus
+│   ├── Forja3D_menus.pdf  # guia de todos os menus
 │   └── img/               # capturas de ecrã
 └── forja/
     ├── __main__.py        # ponto de entrada (python -m forja), registo de erros
@@ -284,7 +284,7 @@ Forja/
 - **Janela por mixins.** A `MainWindow` junta classes de ações (`actions_*.py`) e cada uma fornece os seus menus. Todas as ações passam por um invólucro que apanha erros, mostra a mensagem e regista-a em `erros.log`, em vez de fechar o programa.
 - **Ferramentas editáveis.** Cada resultado de ferramenta guarda o método, os valores e a malha de origem (`obj.tool`). Selecionar uma peça reabre o painel com esses valores, e aplicar de novo substitui o grupo anterior. Os projetos `.forja` guardam esta informação.
 - **Painéis declarativos.** As ferramentas de painel são descritas por especificações de campos (rádio, lista, números, ficheiros, listas de ficheiros, botões) agrupadas por método. O mesmo painel genérico serve todas.
-- **Malhas robustas.** As booleanas usam manifold3d; quando a malha não é fechada, a Forja tenta reparar ou unir as partes fechadas e explica o problema.
+- **Malhas robustas.** As booleanas usam manifold3d; quando a malha não é fechada, a Forja 3D tenta reparar ou unir as partes fechadas e explica o problema.
 - **Vista 3D.** Usa pyqtgraph com um shader próprio de 6 luzes. Os eixos em caixa e os rótulos são reconstruídos fora do ciclo de desenho, e os rótulos são desenhados por cima em Qt.
 
 ## Línguas
@@ -293,7 +293,7 @@ A interface está em **português** e pode mudar-se para **inglês** em Ajuda �
 
 ## Documentação
 
-- **[docs/Forja_menus.pdf](docs/Forja_menus.pdf)**: guia com o que faz cada entrada de cada menu, os atalhos, a navegação e os fluxos típicos.
+- **[docs/Forja3D_menus.pdf](docs/Forja3D_menus.pdf)**: guia com o que faz cada entrada de cada menu, os atalhos, a navegação e os fluxos típicos.
 - **Ajuda ▸ Atalhos e navegação**, dentro da aplicação.
 
 ## Estado e limitações

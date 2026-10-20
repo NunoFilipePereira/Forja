@@ -1,4 +1,4 @@
-"""Janela principal da Forja: espaço 3D, tela 2D, imagens/metrologia e todos os menus."""
+"""Janela principal da Forja 3D: espaço 3D, tela 2D, imagens/metrologia e todos os menus."""
 import io
 import json
 import os
@@ -41,13 +41,13 @@ MESH_FILTER = "Malhas 3D (*.stl *.obj *.ply *.off *.3mf *.glb *.gltf);;Todos (*)
 IMG_FILTER = ("Imagens e dados (*.png *.jpg *.jpeg *.bmp *.tif *.tiff *.s8 *.u8 *.s16 *.u16 *.s32 *.u32 *.f32 *.flt *.dbl "
               "*.raw *.asc *.csv *.dat *.dcm *.avi *.mp4 *.mov);;Todos (*)")
 D2_FILTER = "Desenho 2D (*.dxf *.svg *.txt);;Todos (*)"
-PROJ_FILTER = "Projeto Forja (*.forja)"
+PROJ_FILTER = "Projeto Forja 3D (*.forja)"
 
 
 class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitActions, GenActions, SheetActions, MetroActions, CTActions, ViewActions, VisionActions, DeviceActions, Mesh2Actions, Draw2Actions, ChartActions, Image3Actions, Metro3Actions, QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Forja — prototipagem rápida")
+        self.setWindowTitle("Forja 3D — prototipagem rápida")
         self.resize(1440, 900)
         self.settings = QSettings("Forja", "Forja")
         self.doc = Document()
@@ -94,7 +94,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
         self._build_extra_menus()
         self._build_toolbar()
         self.statusBar().showMessage(tr("Pronto. Abra um modelo (⌘O) ou experimente Ficheiro ▸ Exemplos."))
-        self.log("Forja iniciada.")
+        self.log("Forja 3D iniciada.")
 
     # ======================================================================
     # utilitários
@@ -113,7 +113,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
         import datetime
         with open(entry.LOG, "a") as f:
             f.write(f"\n=== {datetime.datetime.now():%Y-%m-%d %H:%M:%S} (mensagem) ===\n{msg}\n")
-        QMessageBox.warning(self, "Forja", str(msg).split("\n\n")[0])
+        QMessageBox.warning(self, "Forja 3D", str(msg).split("\n\n")[0])
 
     def ask(self, title, fields, note=None):
         return ParamDialog.ask(self, title, fields, note)
@@ -319,8 +319,8 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
 
     def set_language(self, code):
         self.settings.setValue("lang", code)
-        QMessageBox.information(self, "Forja", "A língua muda quando voltar a abrir a Forja.\n"
-                                "The language changes the next time you open Forja.")
+        QMessageBox.information(self, "Forja 3D", "A língua muda quando voltar a abrir a Forja 3D.\n"
+                                "The language changes the next time you open Forja 3D.")
 
     def _build_extra_menus(self):
         for provider in ("menus_image", "menus_fit", "menus_gen", "menus_sheet", "menus_metro", "menus_ct",
@@ -537,7 +537,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
         self._menu(mb, "A&juda", [
             ("Formato dos dados de formas", lambda: TextDialog.show_text(self, "Formato", s2.DATA_HELP)),
             ("Atalhos e navegação", self.act_help),
-            ("Sobre a Forja", self.act_about),
+            ("Sobre a Forja 3D", self.act_about),
         ])
 
     def _build_toolbar(self):
@@ -839,7 +839,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
                 return self.error("Palavra-passe errada (ou ficheiro danificado).")
             self.project_password = v["p"]
         if not zipfile.is_zipfile(p):
-            return self.error(f"{name} não é um projeto Forja válido.")
+            return self.error(f"{name} não é um projeto Forja 3D válido.")
         _srcs, _idmap = {}, {}
         with zipfile.ZipFile(p) as z:
             meta = json.loads(z.read("project.json"))
@@ -1030,7 +1030,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
 
     def act_text3d(self):
         from ..core import text3d
-        v = self.ask("Texto 3D", [("t", "Texto", "Forja"), ("size", "Altura das letras (mm)", 20.0),
+        v = self.ask("Texto 3D", [("t", "Texto", "Forja 3D"), ("size", "Altura das letras (mm)", 20.0),
                                   ("depth", "Espessura (mm)", 5.0), ("font", "Tipo de letra", "Helvetica"),
                                   ("bold", "Negrito", True), ("base", "Base por baixo (mm, 0 = sem)", 0.0)])
         if not v:
@@ -1401,7 +1401,7 @@ class MainWindow(ImportActions, StyleActions, ParamActions, ImageActions, FitAct
             return
         o = objs[0]
         b = o.mesh.bounds
-        v = self.ask("Texto em relevo / gravado", [("t", "Texto", "Forja"), ("size", "Altura das letras (mm)", 8.0),
+        v = self.ask("Texto em relevo / gravado", [("t", "Texto", "Forja 3D"), ("size", "Altura das letras (mm)", 8.0),
                                                    ("d", "Profundidade (mm)", 1.0), ("mode", "Modo", "gravar", ["gravar", "relevo"]),
                                                    ("face", "Face", "maior face plana", ["maior face plana", "topo", "frente (−Y)", "fundo"]),
                                                    ("dx", "Deslocar X (mm)", 0.0), ("dy", "Deslocar Y/Z (mm)", 0.0)])
@@ -2224,8 +2224,8 @@ Erros inesperados aparecem numa mensagem e ficam no ficheiro erros.log, na pasta
 
     def act_about(self):
         from .. import __version__
-        QMessageBox.about(self, "Sobre a Forja",
-                          f"<b>Forja {__version__}</b> — ferramenta de prototipagem rápida.<br><br>"
+        QMessageBox.about(self, "Sobre a Forja 3D",
+                          f"<b>Forja 3D {__version__}</b> — ferramenta de prototipagem rápida.<br><br>"
                           "Malhas 3D, partição, oco, booleanas, texto e relevos; desenho 2D, nesting, percursos e G-code; "
                           "processamento de imagem e metrologia ótica (luz estruturada, foco, deflectometria, visual hull).<br><br>"
                           "Implementação própria em Python (PySide6, trimesh, manifold3d, shapely, OpenCV, scikit-image).")

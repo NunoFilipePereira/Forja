@@ -52,7 +52,7 @@ class ParamPanel(QWidget):
         self._token = 0
         self._last_build = 0.0
         lay = QVBoxLayout(self); lay.setContentsMargins(4, 4, 4, 4)
-        self.title = QLabel(tr("Selecione um objeto criado na Forja para ver os seus ajustes."))
+        self.title = QLabel(tr("Selecione um objeto criado na Forja 3D para ver os seus ajustes."))
         self.title.setWordWrap(True)
         f = self.title.font(); f.setBold(True); self.title.setFont(f)
         lay.addWidget(self.title)
@@ -75,7 +75,7 @@ class ParamPanel(QWidget):
         box = QWidget(); outer = QVBoxLayout(box); outer.setContentsMargins(0, 0, 0, 0)
         self.b_reset.setEnabled(bool(gen)); self.b_new.setEnabled(bool(gen))
         if not gen:
-            self.title.setText(tr("Selecione um objeto criado na Forja para ver os seus ajustes."))
+            self.title.setText(tr("Selecione um objeto criado na Forja 3D para ver os seus ajustes."))
             self.status.setText(" ")
             outer.addStretch(1); self.scroll.setWidget(box)
             return

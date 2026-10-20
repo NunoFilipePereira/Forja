@@ -129,7 +129,7 @@ class Draw2Actions:
     def d2_text(self):
         from PySide6.QtGui import QFontDatabase
         fams = QFontDatabase.families()
-        v = self.ask("Texto", [("t", "Texto", "Forja"), ("f", "Tipo de letra", "Helvetica" if "Helvetica" in fams else fams[0], fams),
+        v = self.ask("Texto", [("t", "Texto", "Forja 3D"), ("f", "Tipo de letra", "Helvetica" if "Helvetica" in fams else fams[0], fams),
                                ("s", "Altura (mm)", 10.0), ("b", "Negrito", False), ("x", "X", 0.0), ("y", "Y (linha de base)", 0.0),
                                ("a", "Rotação (°)", 0.0)])
         if v:

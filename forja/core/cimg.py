@@ -37,7 +37,7 @@ def demo_rgb(n=240):
 
 
 def load_rgb(path="", max_px=400):
-    """RGB em [0, 1]. Sem caminho: imagem atual da Forja; sem imagem: exemplo."""
+    """RGB em [0, 1]. Sem caminho: imagem atual da Forja 3D; sem imagem: exemplo."""
     img = None
     if path and os.path.exists(path):
         import cv2

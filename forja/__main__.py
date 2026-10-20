@@ -19,7 +19,7 @@ def _install_error_log():
         sys.__stderr__.write(text)
         try:
             from PySide6.QtWidgets import QMessageBox
-            QMessageBox.critical(None, "Forja — erro", f"{exc_type.__name__}: {exc}\n\n(registado em erros.log)")
+            QMessageBox.critical(None, "Forja 3D — erro", f"{exc_type.__name__}: {exc}\n\n(registado em erros.log)")
         except Exception:
             pass
     sys.excepthook = hook
@@ -49,7 +49,7 @@ def main():
     fmt = QSurfaceFormat(); fmt.setSamples(4); fmt.setDepthBufferSize(24)
     QSurfaceFormat.setDefaultFormat(fmt)
     app = QApplication(sys.argv)
-    app.setApplicationName("Forja")
+    app.setApplicationName("Forja 3D")
     _install_error_log()
     from PySide6.QtCore import QSettings
     from . import i18n

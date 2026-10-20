@@ -253,7 +253,7 @@ def gcode(layers, s):
     flow = s["flow"] / 100.0
     lw, lh = s["line_w"], s["layer_h"]
     F = s["speed"] * 60; T = s["travel"] * 60; R = s["retract_speed"] * 60
-    L = [";Gerado pela Forja (fatiador)", f";Camadas: {len(layers)}", "G21", "G90", "M82",
+    L = [";Gerado pela Forja 3D (fatiador)", f";Camadas: {len(layers)}", "G21", "G90", "M82",
          f"M140 S{s['bed_temp']:.0f}", f"M104 S{s['nozzle_temp']:.0f}", f"M190 S{s['bed_temp']:.0f}", f"M109 S{s['nozzle_temp']:.0f}",
          s.get("start_gcode", "G28"), "G92 E0", "M106 S255"]
     E = 0.0

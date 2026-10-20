@@ -1,4 +1,4 @@
-"""Gera o ícone da Forja (packaging/forja.png, .ico e .icns) — uma bigorna estilizada."""
+"""Gera o ícone da Forja 3D (packaging/forja.png, .ico e .icns) — uma bigorna estilizada."""
 import os, sys
 from PySide6.QtGui import QGuiApplication, QImage, QPainter, QColor, QPainterPath, QLinearGradient, QFont
 from PySide6.QtCore import Qt, QRectF, QPointF
@@ -21,6 +21,9 @@ p.fillRect(QRectF(200, 380, 620, 22), QColor("#5A5A60"))
 p.setPen(Qt.NoPen); p.setBrush(QColor("#FFD54A"))
 for x, y, r in ((560, 250, 34), (650, 200, 20), (470, 205, 16), (720, 290, 14)):
     p.drawEllipse(QPointF(x, y), r, r)
+# "3D"
+f = QFont("Helvetica", 1); f.setPixelSize(170); f.setBold(True); p.setFont(f)
+p.setPen(QColor("#FFF3E0")); p.drawText(QRectF(560, 800, 380, 180), Qt.AlignRight | Qt.AlignVCenter, "3D")
 p.end()
 out = os.path.join(os.path.dirname(__file__), "forja.png")
 img.save(out)

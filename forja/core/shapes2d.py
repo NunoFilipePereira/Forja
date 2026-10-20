@@ -361,7 +361,7 @@ def export_eps(shapes, path):
     x0, y0, x1, y1 = b[:, 0].min(), b[:, 1].min(), b[:, 2].max(), b[:, 3].max()
     k = 72 / 25.4  # mm → pontos
     out = ["%!PS-Adobe-3.0 EPSF-3.0", f"%%BoundingBox: 0 0 {int((x1 - x0) * k) + 1} {int((y1 - y0) * k) + 1}",
-           "%%Creator: Forja", "0.3 setlinewidth"]
+           "%%Creator: Forja 3D", "0.3 setlinewidth"]
     for s in shapes:
         for p in iter_paths(s.geom):
             pts = [((x - x0) * k, (y - y0) * k) for x, y in p[:, :2]]
